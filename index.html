@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FLICKITY-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- FONTAWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- ANIMATE-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/waves.min.css" />
+    <title>KR Impresores</title>
+  </head>
+  <body>
+    <nav>
+      <section class="navegador">
+        <div class="nav__redes" id="nav__redes">
+          <div class="redes__contenido">
+            <div class="redes__left">
+              <div class="rleft__contenido">
+                <div class="red"><i class="fab fa-facebook-square"></i></div>
+                <div class="red"><i class="fab fa-whatsapp-square"></i></div>
+                <div class="red"><i class="fas fa-envelope-square"></i></div>
+              </div>
+            </div>
+            <div class="redes__right">
+              <div class="rright__contenido">
+                <div class="registrate">
+                  <a href="./usu_registro.html">Regístrate</a>
+                </div>
+                <div class="iniciar">
+                  <a href="./usu_sesion.html">Iniciar Sesión</a>
+                </div>
+                <div class="iniciar">
+                  <a href="./usu_carrito.html"
+                    ><i class="fas fa-dolly-flatbed"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__barra" id="nav__barra">
+          <div class="nav__contenido">
+            <div class="nav__logo">
+              <a href="./index.html">
+                <img src="./img/logoKR.png" alt="LogoKR" id="nav__img" />
+              </a>
+            </div>
+            <div class="nav__navegacion">
+              <ul class="nav__lista">
+                <li class="nav__item b-derecho">
+                  <a href="./index.html" class="nav__link">Inicio</a>
+                </li>
+                <li class="nav__item b-derecho">
+                  <a href="./empresa.html" class="nav__link">Empresa</a>
+                </li>
+                <li class="nav__item b-derecho">
+                  <a href="#" class="nav__link"
+                    >Servicios <i class="fas fa-angle-down"></i
+                  ></a>
+                  <ul class="nav__sublista">
+                    <li class="nav__subitem">
+                      <a href="./impOffset.html" class="nav__sublink"
+                        >Impresión Offset</a
+                      >
+                    </li>
+                    <li class="nav__subitem">
+                      <a href="./impDigital.html" class="nav__sublink"
+                        >Impresión Digital</a
+                      >
+                    </li>
+                    <li class="nav__subitem">
+                      <a href="./impSerEditorial.html" class="nav__sublink"
+                        >Servicios Editoriales</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav__item b-derecho">
+                  <a href="./impreonline.html" class="nav__link"
+                    >Imprenta Online</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="./contactanos.html" class="nav__link">Contáctanos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__movil">
+              <ul class="nav__lista__m">
+                <li><i class="fas fa-align-justify"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <header>
+      <section class="cabecera">
+        <div class="cabecera__texto">
+          <div class="c_txt">
+            <h1>Impresión Offset y Digital en Arequipa</h1>
+          </div>
+        </div>
+        <div class="cabecera__imagen">
+          <div class="c__img"><img src="./img/cabecera_01.png" /></div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="cuerpo">
+        <div class="limite">
+          <div class="imprenta__compra">
+            <div class="titulo">
+              <h2>Impresión offset o digital de calidad y económica</h2>
+            </div>
+            <div class="linea"></div>
+            <div class="subtitulo">
+              <span>Impresiones y envios a todo Arequipa</span><br />
+            </div>
+            <div class="imprenta__btn">
+              <button
+                type="button"
+                class="boton btn1 btnIO"
+                id="boton1"
+                onclick="llamarPaginaImpreOnline()"
+              >
+                Compra Online
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="limite-claro">
+          <div class="imprenta__ofrecemos">
+            <div class="ofrece" id="ofrece">
+              <div class="ofrece__inner">
+                <div class="ofrece__front">
+                  <div class="ofrece__lg">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div>
+                  <div class="ofrece__sub">
+                    <span>Calidad y Garantia</span>
+                  </div>
+                </div>
+                <div class="ofrece__back">
+                  <div class="ofrece__txt">
+                    <p><b>CALIDAD GARANTIZADA</b></p>
+                    Un excelente equipo de profesionales y tecnología de última
+                    generación garantizan la máxima calidad de nuestro servicio.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ofrece" id="ofrece">
+              <div class="ofrece__inner">
+                <div class="ofrece__front">
+                  <div class="ofrece__lg">
+                    <i class="fas fa-shipping-fast"></i>
+                  </div>
+                  <div class="ofrece__sub">
+                    <span>Rapidez y Eficacia</span>
+                  </div>
+                </div>
+                <div class="ofrece__back">
+                  <div class="ofrece__txt">
+                    <p><b>RAPIDEZ Y EFICACIA</b></p>
+                    ¿Para cuando lo necesitas? Entendemos tus urgencias y nos
+                    adaptamos a tus necesidades. Consúltanos.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ofrece" id="ofrece">
+              <div class="ofrece__inner">
+                <div class="ofrece__front">
+                  <div class="ofrece__lg">
+                    <i class="fas fa-dollar-sign"></i>
+                  </div>
+                  <div class="ofrece__sub">
+                    <span>Precios Económicos</span>
+                  </div>
+                </div>
+                <div class="ofrece__back">
+                  <div class="ofrece__txt">
+                    <p><b>PRECIOS ECONÓMICOS</b></p>
+                    Echa un vistazo a nuestros precios, y comprobarás lo
+                    competitivos que son en cualquiera de los productos.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ofrece" id="ofrece">
+              <div class="ofrece__inner">
+                <div class="ofrece__front">
+                  <div class="ofrece__lg">
+                    <i class="fas fa-people-arrows"></i>
+                  </div>
+                  <div class="ofrece__sub">
+                    <span>Trato Personalizado</span>
+                  </div>
+                </div>
+                <div class="ofrece__back">
+                  <div class="ofrece__txt">
+                    <p><b>TRATO PERSONALIZADO</b></p>
+                    Trabajamos de forma flexible y personalizada, ajustándonos
+                    en cada momento a tus necesidades.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ofrece" id="ofrece">
+              <div class="ofrece__inner">
+                <div class="ofrece__front">
+                  <div class="ofrece__lg">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="ofrece__sub">
+                    <span>Seriedad y Experiencia</span>
+                  </div>
+                </div>
+                <div class="ofrece__back">
+                  <div class="ofrece__txt">
+                    <p><b>SERIEDAD Y EXPERIENCIA</b></p>
+                    Más de 20 años de experiencia en el sector de las artes
+                    gráficas. Todos los trabajos se realizan íntegramente en
+                    nuestros talleres.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ofrece" id="ofrece">
+              <div class="ofrece__inner">
+                <div class="ofrece__front">
+                  <div class="ofrece__lg">
+                    <i class="fas fa-box-open"></i>
+                  </div>
+                  <div class="ofrece__sub">
+                    <span>Envíos Gratuitos</span>
+                  </div>
+                </div>
+                <div class="ofrece__back">
+                  <div class="ofrece__txt">
+                    <p><b>ENVÍOS GRATUITOS</b></p>
+                    Para todos tus pedidos en la web el envío a cualquier punto
+                    de España (Península) te saldrá gratuito.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="limite">
+          <div class="imprenta__especialistas">
+            <div class="titulo">
+              <h2>Especialistas en Impresión Offset y Digital</h2>
+            </div>
+            <div class="linea"></div>
+            <div class="carusel espacioY">
+              <div class="carousel-cell">
+                <img src="./img/especialistas_01.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/especialistas_02.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/especialistas_03.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/especialistas_04.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/especialistas_05.jpg" alt="" />
+              </div>
+              <div class="carousel-cell">
+                <img src="./img/especialistas_06.jpg" alt="" />
+              </div>
+            </div>
+            <div class="texto">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                sapiente, explicabo id soluta iure fugiat qui aperiam, expedita,
+                dolorem quos perspiciatis doloribus exercitationem porro hic?
+                Modi magnam architecto fugit hic.
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+                in porro quisquam quibusdam vero. Sed nam praesentium, voluptate
+                omnis architecto sunt error qui dolores necessitatibus
+                aspernatur voluptatibus, cumque excepturi ab.Facere possimus
+                nobis asperiores illo facilis consequatur. Odit, dicta? Ipsum
+                accusamus aut temporibus excepturi quia obcaecati necessitatibus
+                optio praesentium esse voluptatum. Est consectetur, repudiandae
+                eveniet quam debitis adipisci porro consequuntur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem aut quibusdam fuga quod delectus deserunt
+                aspernatur animi, velit iure repellendus debitis similique quam
+                illo suscipit necessitatibus veritatis id autem maiores.
+              </p>
+            </div>
+
+            <div class="pestanias espacioY">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item nav-ancho">
+                  <a
+                    class="nav-link active"
+                    id="libros-tab"
+                    data-toggle="tab"
+                    href="#libros"
+                    role="tab"
+                    aria-controls="libros"
+                    aria-selected="true"
+                    >Libros</a
+                  >
+                </li>
+                <li class="nav-item nav-ancho">
+                  <a
+                    class="nav-link"
+                    id="catalogos-tab"
+                    data-toggle="tab"
+                    href="#catalogos"
+                    role="tab"
+                    aria-controls="catalogos"
+                    aria-selected="false"
+                    >Catalogos y Revistas</a
+                  >
+                </li>
+                <li class="nav-item nav-ancho">
+                  <a
+                    class="nav-link"
+                    id="folletos-tab"
+                    data-toggle="tab"
+                    href="#folletos"
+                    role="tab"
+                    aria-controls="folletos"
+                    aria-selected="false"
+                    >Folletos, Flyers, Carteles</a
+                  >
+                </li>
+                <li class="nav-item nav-ancho">
+                  <a
+                    class="nav-link"
+                    id="tarjetas-tab"
+                    data-toggle="tab"
+                    href="#tarjetas"
+                    role="tab"
+                    aria-controls="tarjetas"
+                    aria-selected="false"
+                    >Tarjetas, calendarios, libretas</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="libros"
+                  role="tabpanel"
+                  aria-labelledby="libros-tab"
+                >
+                  <div class="tab__img">
+                    <img src="./img/pestanias_01.jpg" alt="" />
+                  </div>
+                  <div class="tab_txt texto">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Doloribus voluptates laudantium facere nesciunt quasi
+                      dolores nisi minima magni. Rerum inventore impedit quis
+                      culpa sit, quasi repellendus omnis esse natus. Voluptatum.
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ducimus saepe accusantium harum natus laborum molestias
+                      quo magni. Illum dolorum ipsum laudantium! Sequi dicta
+                      eaque harum quidem reprehenderit, voluptates voluptatum
+                      reiciendis.Reiciendis magni cum velit beatae laboriosam
+                      consectetur nisi at, provident aut dignissimos natus saepe
+                      unde a atque aspernatur exercitationem non quia veritatis
+                      odio dolores aperiam laudantium iure iusto. Dicta,
+                      mollitia?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Similique dicta cum quia, quis, officia expedita,
+                      aspernatur et quibusdam iste in debitis tempora saepe ex
+                      placeat unde odio omnis laboriosam doloribus!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="catalogos"
+                  role="tabpanel"
+                  aria-labelledby="catalogos-tab"
+                >
+                  <div class="tab__img">
+                    <img src="./img/pestanias_02.jpg" alt="" />
+                  </div>
+                  <div class="tab_txt texto">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Doloribus voluptates laudantium facere nesciunt quasi
+                      dolores nisi minima magni. Rerum inventore impedit quis
+                      culpa sit, quasi repellendus omnis esse natus. Voluptatum.
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ducimus saepe accusantium harum natus laborum molestias
+                      quo magni. Illum dolorum ipsum laudantium! Sequi dicta
+                      eaque harum quidem reprehenderit, voluptates voluptatum
+                      reiciendis.Reiciendis magni cum velit beatae laboriosam
+                      consectetur nisi at, provident aut dignissimos natus saepe
+                      unde a atque aspernatur exercitationem non quia veritatis
+                      odio dolores aperiam laudantium iure iusto. Dicta,
+                      mollitia?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Similique dicta cum quia, quis, officia expedita,
+                      aspernatur et quibusdam iste in debitis tempora saepe ex
+                      placeat unde odio omnis laboriosam doloribus!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="folletos"
+                  role="tabpanel"
+                  aria-labelledby="folletos-tab"
+                >
+                  <div class="tab__img">
+                    <img src="./img/pestanias_03.jpg" alt="" />
+                  </div>
+                  <div class="tab_txt texto">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Doloribus voluptates laudantium facere nesciunt quasi
+                      dolores nisi minima magni. Rerum inventore impedit quis
+                      culpa sit, quasi repellendus omnis esse natus. Voluptatum.
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ducimus saepe accusantium harum natus laborum molestias
+                      quo magni. Illum dolorum ipsum laudantium! Sequi dicta
+                      eaque harum quidem reprehenderit, voluptates voluptatum
+                      reiciendis.Reiciendis magni cum velit beatae laboriosam
+                      consectetur nisi at, provident aut dignissimos natus saepe
+                      unde a atque aspernatur exercitationem non quia veritatis
+                      odio dolores aperiam laudantium iure iusto. Dicta,
+                      mollitia?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Similique dicta cum quia, quis, officia expedita,
+                      aspernatur et quibusdam iste in debitis tempora saepe ex
+                      placeat unde odio omnis laboriosam doloribus!
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tarjetas"
+                  role="tabpanel"
+                  aria-labelledby="tarjetas-tab"
+                >
+                  <div class="tab__img">
+                    <img src="./img/pestanias_04.jpg" alt="" />
+                  </div>
+                  <div class="tab_txt texto">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Doloribus voluptates laudantium facere nesciunt quasi
+                      dolores nisi minima magni. Rerum inventore impedit quis
+                      culpa sit, quasi repellendus omnis esse natus. Voluptatum.
+                    </p>
+                    <p>
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Ducimus saepe accusantium harum natus laborum molestias
+                      quo magni. Illum dolorum ipsum laudantium! Sequi dicta
+                      eaque harum quidem reprehenderit, voluptates voluptatum
+                      reiciendis.Reiciendis magni cum velit beatae laboriosam
+                      consectetur nisi at, provident aut dignissimos natus saepe
+                      unde a atque aspernatur exercitationem non quia veritatis
+                      odio dolores aperiam laudantium iure iusto. Dicta,
+                      mollitia?
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Similique dicta cum quia, quis, officia expedita,
+                      aspernatur et quibusdam iste in debitis tempora saepe ex
+                      placeat unde odio omnis laboriosam doloribus!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="limite-oscuro">
+          <div class="imprenta__online">
+            <div class="titulo">
+              <h2>Imprenta Online en Arequipa</h2>
+            </div>
+            <div class="linea"></div>
+            <div class="online espacioY">
+              <div class="online__txt">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                  obcaecati consectetur illum. Ab incidunt fuga laboriosam nisi
+                  ut sunt eligendi qui non temporibus officiis at tenetur, et
+                  aperiam voluptatibus rem. Pariatur accusamus veritatis aut! Ut
+                  obcaecati unde, ullam, voluptate veritatis recusandae deserunt
+                  voluptas voluptatibus necessitatibus expedita possimus? Veniam
+                  deleniti labore ratione ea. Voluptatibus autem, doloremque
+                  explicabo repudiandae at similique non. Fugit impedit natus
+                  quas ut quaerat? Corrupti eos ratione dignissimos est
+                  similique, temporibus accusamus voluptatem porro neque
+                  doloribus mollitia soluta amet ad ex quos nemo reprehenderit
+                  consequatur, minima quasi fugiat.
+                </p>
+                <div class="subtitulo">
+                  <span>Ventajas de comprar en una imprenta online</span>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Exercitationem illum veritatis quo impedit quos tenetur optio
+                  voluptas iusto nostrum odio in aperiam, ipsum expedita
+                  voluptates placeat architecto! Fuga, ut libero!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
+                  repellat impedit necessitatibus temporibus unde soluta
+                  praesentium! Culpa quam, illum quos odit fugiat sunt
+                  accusamus, tempora aperiam illo dicta dignissimos praesentium!
+                  Natus totam debitis nihil rem molestiae. Vero quae quis
+                  dignissimos perferendis excepturi exercitationem. Ipsam sed
+                  provident molestias, quae explicabo aliquid distinctio maxime
+                  autem velit voluptate animi quasi, magnam laboriosam harum.
+                  Sunt fuga quisquam delectus tempora vitae sed temporibus illum
+                  fugit aperiam id animi provident non molestiae sit repellat
+                  repudiandae voluptates ab, velit quam tenetur! Adipisci totam
+                  et illo voluptas minima.
+                </p>
+              </div>
+              <div class="online__imagen">
+                <div class="online__img">
+                  <img src="./img/online_01.jpg" alt="" />
+                </div>
+                <div class="online__btn">
+                  <button
+                    class="boton btn2 btnIO"
+                    id="boton2"
+                    onclick="llamarPaginaImpreOnline()"
+                  >
+                    Compra Online
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__main">
+        <div class="footer_txt">
+          <div class="footer__img">
+            <img src="./img/logoKR-negativo.png" alt="" />
+          </div>
+          <div class="footer__direccion">
+            <ul>
+              <li>Cercado - Arequipa - Arequipa</li>
+              <li>(+054) 987665523</li>
+              <li>kr.impresores@hotmail.com</li>
+            </ul>
+          </div>
+          <div class="rleft__contenido">
+            <div class="red"><i class="fab fa-facebook-square"></i></div>
+            <div class="red"><i class="fab fa-whatsapp-square"></i></div>
+            <div class="red"><i class="fas fa-envelope-square"></i></div>
+          </div>
+        </div>
+        <div class="footer__kr">
+          <h5>Conocenos</h5>
+          <ul>
+            <li>Contactanos</li>
+            <li>Empresa</li>
+          </ul>
+        </div>
+        <div class="footer__informacion">
+          <h5>Te Interesa</h5>
+          <ul>
+            <li>Imprenta Online</li>
+            <li>Impresión Offset</li>
+            <li>Impresión Digital</li>
+            <li>Servicios Editoriales</li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__made">
+        <div>&copy; 2020 Todos los derechos reservados. | Yue</div>
+      </section>
+    </footer>
+    <!-- FLICKITY -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- WAVES -->
+    <script src="./js/waves.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
